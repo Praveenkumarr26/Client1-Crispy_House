@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crispy House — Hot, Fresh & Crispy Delights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo"><img
+        src="images/crispyhouse_logo.png"
+        alt="Crispy House" class="nav-logo-img" /></a>
+    <ul class="nav-links">
+      <li><a href="#categories" data-section="categories">Menu</a></li>
+      <li><a href="#menu" data-section="menu">Dishes</a></li>
+      <li><a href="#why" data-section="why">About</a></li>
+      <li><a href="https://wa.me/918328039532?text=Hi%20I%20want%20to%20order%20from%20Crispy%20House" target="_blank"
+          class="nav-cta">Order Now 🍕</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#categories" class="mob-link">Categories</a></li>
+      <li><a href="#menu" class="mob-link">Full Menu</a></li>
+      <li><a href="#why" class="mob-link">Why Us</a></li>
+      <li><a href="#order" class="mob-link">Order</a></li>
+      <li><a href="https://wa.me/918328039532?text=Hi%20I%20want%20to%20order%20from%20Crispy%20House" target="_blank"
+          style="color:var(--ember);font-weight:700;">🍕 Order on WhatsApp</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="floaters">
+      <span class="floater">🍕</span><span class="floater">🧇</span>
+      <span class="floater">🍟</span><span class="floater">🍹</span>
+      <span class="floater">🍫</span><span class="floater">🌶️</span>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">☆ Cloud Kitchen — Vizianagaram</div>
+      <div class="hero-logo-wrap"><img
+          src="images/crispyhouse_logo.png"
+          alt="Crispy House Logo" class="hero-logo-img" /></div>
+      <h1 class="hero-title"><span>Crispy House</span></h1>
+      <p class="hero-tagline">Hot, Fresh &amp; Crispy Delights 🍕</p>
+      <p class="hero-sub">Delicious pizzas, waffles &amp; more — made fresh for you</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="https://wa.me/918328039532?text=Hi%20I%20want%20to%20order%20from%20Crispy%20House" target="_blank"
+          class="btn-secondary">Order on WhatsApp 📲</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-dot"></div><span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories">
+    <div class="container">
+      <div class="cat-header reveal">
+        <p class="section-label">What we serve</p>
+        <h2 class="section-title">Browse by <em>Category</em></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card reveal delay-1" data-filter="pizzas">
+          <div class="cat-card-glow"></div>
+          <div class="cat-active-badge">✓</div>
+          <span class="cat-icon">🍕</span>
+          <div class="cat-name">Pizzas</div>
+          <div class="cat-sub">9 Veg + 1 Non-Veg</div>
+        </div>
+        <div class="cat-card reveal delay-2" data-filter="waffles">
+          <div class="cat-card-glow"></div>
+          <div class="cat-active-badge">✓</div>
+          <span class="cat-icon">🧇</span>
+          <div class="cat-name">Waffles</div>
+          <div class="cat-sub">2 varieties</div>
+        </div>
+        <div class="cat-card reveal delay-3" data-filter="fries">
+          <div class="cat-card-glow"></div>
+          <div class="cat-active-badge">✓</div>
+          <span class="cat-icon">🍟</span>
+          <div class="cat-name">French Fries</div>
+          <div class="cat-sub">1 variety</div>
+        </div>
+        <div class="cat-card reveal delay-4" data-filter="mocktails">
+          <div class="cat-card-glow"></div>
+          <div class="cat-active-badge">✓</div>
+          <span class="cat-icon">🍹</span>
+          <div class="cat-name">Mocktails</div>
+          <div class="cat-sub">5 varieties</div>
+        </div>
+        <div class="cat-card reveal delay-5" data-filter="chocolates">
+          <div class="cat-card-glow"></div>
+          <div class="cat-active-badge">✓</div>
+          <span class="cat-icon">🍫</span>
+          <div class="cat-name">Choco Bites</div>
+          <div class="cat-sub">Dark & Milk</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-header reveal">
+        <p class="section-label">Our full menu</p>
+        <h2 class="section-title">Every Bite, <em>Crafted</em> with Love</h2>
+        <div class="section-divider" style="margin:1.2rem auto 0;"></div>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">✦ All Items</button>
+        <button class="filter-btn" data-filter="pizzas">🍕 Pizzas</button>
+        <button class="filter-btn" data-filter="waffles">🧇 Waffles</button>
+        <button class="filter-btn" data-filter="fries">🍟 Fries</button>
+        <button class="filter-btn" data-filter="mocktails">🍹 Mocktails</button>
+        <button class="filter-btn" data-filter="chocolates">🍫 Choco Bites</button>
+      </div>
+
+      <!-- PIZZAS -->
+      <div class="menu-chapter" id="chapter-pizzas">
+        <h3 class="chapter-title reveal"><span class="ch-icon">🍕</span> Veg Pizzas <span class="ch-line"></span></h3>
+        <div class="menu-grid">
+          <div class="menu-card reveal delay-1">
+            <div class="menu-card-img"><img src="images/onion_pizza.png" alt="Onion Pizza" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Onion Pizza</div>
+              <div class="menu-item-desc">Caramelised onion with herbs and melted cheese</div>
+              <div class="menu-item-footer"><span class="menu-price">₹99</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Onion%20Pizza" target="_blank"
+                  class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-2">
+            <div class="menu-card-img"><img src="images/tomato_pizza.png" alt="Tomato Pizza" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Tomato Pizza</div>
+              <div class="menu-item-desc">Fresh tomatoes with tangy sauce and stretchy cheese</div>
+              <div class="menu-item-footer"><span class="menu-price">₹99</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Tomato%20Pizza" target="_blank"
+                  class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-3">
+            <div class="menu-card-img"><img src="images/capsicum_pizza.png" alt="Capsicum Pizza" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Capsicum Pizza</div>
+              <div class="menu-item-desc">Crunchy capsicum with herb seasoning and cheese</div>
+              <div class="menu-item-footer"><span class="menu-price">₹99</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Capsicum%20Pizza"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-4">
+            <div class="menu-card-img"><img src="images/sweet_corn_pizza.png" alt="Sweet Corn Pizza" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Sweet Corn Pizza</div>
+              <div class="menu-item-desc">Golden sweet corn with creamy cheese on crispy base</div>
+              <div class="menu-item-footer"><span class="menu-price">₹99</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Sweet%20Corn%20Pizza"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-5">
+            <div class="menu-card-img"><img src="images/Corn Bliss & Capsicum.png" alt="Corn Bliss & Capsicum"
+                loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Corn Bliss &amp; Capsicum</div>
+              <div class="menu-item-desc">Sweet corn meets fresh capsicum in a cheesy delight</div>
+              <div class="menu-item-footer"><span class="menu-price">₹110</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Corn%20Bliss%20%26%20Capsicum%20Pizza"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-3">
+            <div class="menu-card-img"><img src="images/veggie_pizza.png" alt="Veggie Loaded" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Veggie Loaded</div>
+              <div class="menu-item-desc">Overflowing with fresh veggies, sauce &amp; cheese</div>
+              <div class="menu-item-footer"><span class="menu-price">₹120</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Veggie%20Loaded%20Pizza"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-2">
+            <div class="menu-card-img"><img src="images/cheese_overloaded.png" alt="Cheese Overloaded" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Cheese Overloaded</div>
+              <div class="menu-item-desc">Triple cheese heaven on a perfectly crispy crust</div>
+              <div class="menu-item-footer"><span class="menu-price">₹130</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Cheese%20Overloaded%20Pizza"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-4">
+            <div class="menu-card-img"><img src="images/paneer_pizza.png" alt="Fresh Paneer Pizza" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Fresh Paneer Pizza</div>
+              <div class="menu-item-desc">Spiced cottage cheese with smoky tomato sauce</div>
+              <div class="menu-item-footer"><span class="menu-price">₹130</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Fresh%20Paneer%20Pizza"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-5">
+            <div class="menu-card-img"><img src="images/crispy_veg.png" alt="Crispy Veg Pizza" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Crispy Veg Pizza</div>
+              <div class="menu-item-desc">Our signature crispy loaded veg with secret spice blend</div>
+              <div class="menu-item-footer"><span class="menu-price">₹150</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Crispy%20Veg%20Pizza"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="chapter-title reveal" style="margin-top:1rem;"><span class="ch-icon">🍗</span> Non-Veg Pizza <span
+            class="ch-line"></span></h3>
+        <div class="menu-grid">
+          <div class="menu-card reveal delay-1">
+            <div class="menu-card-img"><img src="images/chicken_pizza.png" alt="Chicken Pizza" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Chicken Pizza</div>
+              <div class="menu-item-desc">Juicy chicken chunks with fiery red sauce &amp; cheese</div>
+              <div class="menu-item-footer"><span class="menu-price">₹150</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Chicken%20Pizza" target="_blank"
+                  class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WAFFLES -->
+      <div class="menu-chapter" id="chapter-waffles">
+        <h3 class="chapter-title reveal"><span class="ch-icon">🧇</span> Waffles <span class="ch-line"></span></h3>
+        <div class="menu-grid">
+          <div class="menu-card reveal delay-1">
+            <div class="menu-card-img"><img src="images/chocolate_waffle.png" alt="Chocolate Chips Waffle"
+                loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Chocolate Chips Waffle</div>
+              <div class="menu-item-desc">Golden waffle loaded with rich chocolate chips</div>
+              <div class="menu-item-footer"><span class="menu-price">₹40</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Chocolate%20Chips%20Waffle"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-2">
+            <div class="menu-card-img"><img src="images/pancake_waffle.png" alt="Pancake Choco Waffle" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Pancake Choco Waffle</div>
+              <div class="menu-item-desc">Fluffy pancake-style waffle drizzled with rich chocolate</div>
+              <div class="menu-item-footer"><span class="menu-price">₹60</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Pancake%20Choco%20Waffle"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FRIES -->
+      <div class="menu-chapter" id="chapter-fries">
+        <h3 class="chapter-title reveal"><span class="ch-icon">🍟</span> French Fries <span class="ch-line"></span></h3>
+        <div class="menu-grid">
+          <div class="menu-card reveal delay-1">
+            <div class="menu-card-img"><img src="images/fries.png" alt="Crispy Fries" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Crispy Fries</div>
+              <div class="menu-item-desc">Classic golden crispy fries seasoned to perfection</div>
+              <div class="menu-item-footer"><span class="menu-price">₹50</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Crispy%20Fries" target="_blank"
+                  class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHOCOLATES -->
+      <div class="menu-chapter" id="chapter-chocolates">
+        <h3 class="chapter-title reveal"><span class="ch-icon">🍫</span> Choco Bites <span class="ch-line"></span></h3>
+        <div class="menu-grid">
+          <div class="menu-card reveal delay-1">
+            <div class="menu-card-img"><img src="images/choco_bites.png" alt="Dark Choco Bites" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Dark Choco Bites</div>
+              <div class="menu-item-desc">Rich bittersweet dark chocolate bites — 50gm</div>
+              <div class="menu-item-footer"><span class="menu-price">₹25</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Dark%20Choco%20Bites"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-2">
+            <div class="menu-card-img"><img src="images/milk_choco_bites.png" alt="Milk Choco Bites" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Milk Choco Bites</div>
+              <div class="menu-item-desc">Creamy smooth milk chocolate bites — 50gm</div>
+              <div class="menu-item-footer"><span class="menu-price">₹30</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Milk%20Choco%20Bites"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOCKTAILS -->
+      <div class="menu-chapter" id="chapter-mocktails">
+        <h3 class="chapter-title reveal"><span class="ch-icon">🍹</span> Mocktails <span class="ch-line"></span></h3>
+        <div class="menu-grid">
+          <div class="menu-card reveal delay-1">
+            <div class="menu-card-img"><img src="images/soda_hub.png" alt="Soda Hub" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Soda Hub</div>
+              <div class="menu-item-desc">Chilled refreshing soda-based signature blend</div>
+              <div class="menu-item-footer"><span class="menu-price">₹25</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Soda%20Hub" target="_blank"
+                  class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-2">
+            <div class="menu-card-img"><img src="images/fresh_lime.png" alt="Fresh Lime" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Fresh Lime</div>
+              <div class="menu-item-desc">Freshly squeezed lime with chilled water &amp; mint</div>
+              <div class="menu-item-footer"><span class="menu-price">₹25</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Fresh%20Lime" target="_blank"
+                  class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-3">
+            <div class="menu-card-img"><img src="images/orange_spark.png" alt="Orange Spark" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Orange Spark</div>
+              <div class="menu-item-desc">Zesty orange crush with sparkling soda &amp; citrus zest</div>
+              <div class="menu-item-footer"><span class="menu-price">₹30</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Orange%20Spark" target="_blank"
+                  class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-4">
+            <div class="menu-card-img"><img src="images/mango_delight.png" alt="Mango Delight" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Mango Delight</div>
+              <div class="menu-item-desc">Tropical mango blend with a sweet fizzy finish</div>
+              <div class="menu-item-footer"><span class="menu-price">₹30</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Mango%20Delight" target="_blank"
+                  class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+          <div class="menu-card reveal delay-5">
+            <div class="menu-card-img"><img src="images/blue_lagoon.png" alt="Blue Lagoon Mint" loading="lazy" />
+              <div class="menu-card-img-overlay"></div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-item-name">Blue Lagoon Mint</div>
+              <div class="menu-item-desc">Cool blue lagoon with refreshing mint &amp; citrus burst</div>
+              <div class="menu-item-footer"><span class="menu-price">₹40</span><a
+                  href="https://wa.me/918328039532?text=Hi%2C%20I%20want%20to%20order%20Blue%20Lagoon%20Mint"
+                  target="_blank" class="menu-order-btn">Order</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY US -->
+
+  <!-- WHY US -->
+  <section id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-left">
+          <p class="section-label reveal">Why choose us</p>
+          <h2 class="section-title reveal" style="margin-bottom:.5rem;">Quality You Can <em>Taste</em></h2>
+          <div class="section-divider reveal"></div>
+          <div class="why-points">
+            <div class="why-point reveal delay-1">
+              <div class="why-icon-wrap">🥬</div>
+              <div>
+                <div class="why-point-title">Fresh Ingredients</div>
+                <div class="why-point-desc">We source the freshest local produce every single day — no frozen shortcuts.
+                </div>
+              </div>
+            </div>
+            <div class="why-point reveal delay-2">
+              <div class="why-icon-wrap">✨</div>
+              <div>
+                <div class="why-point-title">Hygienic Preparation</div>
+                <div class="why-point-desc">Our kitchen follows strict hygiene standards so every bite is safe and
+                  clean.</div>
+              </div>
+            </div>
+            <div class="why-point reveal delay-3">
+              <div class="why-icon-wrap">💰</div>
+              <div>
+                <div class="why-point-title">Affordable Pricing</div>
+                <div class="why-point-desc">Premium flavors starting from ₹30 — great food shouldn't cost a fortune.
+                </div>
+              </div>
+            </div>
+            <div class="why-point reveal delay-4">
+              <div class="why-icon-wrap">⚡</div>
+              <div>
+                <div class="why-point-title">Fast Service</div>
+                <div class="why-point-desc">Your order is prepped fresh and dispatched quickly — hot delivery
+                  guaranteed.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual reveal-right">
+          <div class="why-orb">
+            <div class="why-orb-inner">🍕</div>
+            <div class="why-stat-badge top-right">
+              <div class="badge-num">50+</div>
+              <div class="badge-text">Happy customers</div>
+            </div>
+            <div class="why-stat-badge bot-left">
+              <div class="badge-num">₹30</div>
+              <div class="badge-text">Starts from</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order">
+    <div class="order-glow"></div>
+    <div class="container">
+      <div class="order-inner">
+        <p class="section-label reveal" style="text-align:center;">Ready to eat?</p>
+        <h2 class="section-title reveal" style="text-align:center; margin-bottom:.8rem;">Order Now &amp; Enjoy <em>Fresh
+            Flavors</em></h2>
+        <div class="section-divider reveal" style="margin:1rem auto 1.5rem;"></div>
+        <p class="order-tagline reveal">Skip the wait — place your order directly on WhatsApp and get freshly made food
+          at your doorstep. Fast, easy, delicious.</p>
+        <div class="order-btns reveal">
+          <a href="https://wa.me/918328039532?text=Hi%20I%20want%20to%20order%20from%20Crispy%20House" target="_blank"
+            class="btn-whatsapp"><span>📲</span> Order on WhatsApp</a>
+          <a href="https://www.instagram.com/itz_crispyhouse?igsh=bjQwN2lkam5oZHht" target="_blank"
+            class="btn-insta"><span>📸</span> Instagram</a>
+          <a href="https://www.youtube.com/@crispyhouse-l6e" target="_blank" class="btn-youtube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              style="flex-shrink:0">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+            YouTube
+          </a>
+        </div>
+        <div class="order-contact-strip reveal delay-2">
+          <div class="contact-item"><span>📞</span><strong>+91 83280 39532</strong></div>
+          <div class="contact-item"><span>📍</span><strong>Vizianagaram, AP</strong></div>
+          <div class="contact-item"><span>🕐</span><strong>Open Daily · 10am – 10pm</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <img
+          src="images/crispyhouse_logo.png"
+          alt="Crispy House" style="height:64px;width:auto;filter:drop-shadow(0 0 14px rgba(255,122,26,.55));" />
+        <div>
+          <div class="footer-logo">Crispy House</div>
+          <div class="footer-copy" style="margin-top:.25rem;">Hot, Fresh &amp; Crispy Delights — Vizianagaram</div>
+        </div>
+      </div>
+      <div class="footer-copy">© 2025 Crispy House. All rights reserved.</div>
+      <div class="footer-socials">
+        <a href="https://wa.me/918328039532?text=Hi%20I%20want%20to%20order%20from%20Crispy%20House" target="_blank"
+          class="social-link">📲</a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-link">📸</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/918328039532?text=Hi%20I%20want%20to%20order%20from%20Crispy%20House" target="_blank"
+    class="fab-wa">
+    <span>📲</span>
+    <span class="fab-wa-tooltip">Order on WhatsApp</span>
+  </a>
+  <script src="script.js"></script>
+</body>
+
+</html>
